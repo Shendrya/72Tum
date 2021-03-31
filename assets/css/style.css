@@ -1,0 +1,108 @@
+.header-firstLine {
+    height: 60px;
+    background: #263a4b;
+    border-bottom: 1px solid #2d2d2da0;
+}
+.header-firstLine__text {
+    color: white;
+}
+.header-firstLine__link {
+    color: white;
+    margin-right: 20px;
+    font-size: 18px;
+}
+.header-firstLine__linkLast {
+    margin-right: 0;
+}
+.header-firstLine__link:hover {
+    color: white;
+}
+.header-firstLine__spacer {
+    width: 147px;
+}
+.callbackButton {
+    color: white;
+    font-size: 18px;
+    border: 2px solid white;
+    padding: 5px 15px;
+}
+.callbackButton:hover {
+    background: white;
+    text-decoration: none;
+    color: #263a4b;
+}
+.dk_trdm {
+    width: 414px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    grid-gap: 10px;
+    right: 10px;
+    top: 10px; /* background-color: #b3160f; */
+    padding: 11px;
+    font-size: 14px;
+    border: 2px solid white;
+}
+.dk_trdm_2 {
+    width: 414px;
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    grid-gap: 10px;
+    right: 10px;
+    top: 10px;
+    padding: 11px;
+    font-size: 14px;
+}
+@media (max-width: 1830px) {
+    .dk_trdm {
+        grid-template-columns: 100px 1fr;
+        width: 350px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 1700px) {
+    .dk_trdm {
+        grid-template-columns: 80px 1fr;
+        width: 300px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 1600px) {
+    .dk_trdm {
+        grid-template-columns: 55px 1fr;
+        width: 250px;
+        font-size: 11px;
+    }
+}
+@media (max-width: 1500px) {
+    .dk_trdm {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-firstLine {
+        height: 40px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 50;
+    }
+    .header-firstLine__link {
+        margin-right: 0;
+        display: block;
+        font-size: 12px;
+    }
+    .callbackButton {
+        color: white;
+        font-size: 15px;
+        border: 2px solid white;
+        padding: 4px 10px;
+    }
+}
+@media (max-width: 768px) {
+    .dk_trdm_2 {
+        width: 100%;
+    }
+}

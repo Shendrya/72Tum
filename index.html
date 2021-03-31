@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="ru-ru" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css" />
+        <!-- Google Tag Manager -->
+        <!-- End Google Tag Manager -->
+        <meta charset="utf-8" />
+        <!--<base href="http://tek72.ru/" />-->
+        <meta name="generator" content="Joomla! - Open Source Content Management" />
+        <title>Главная страница</title>
+        <link href="assets/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="assets/css/template.css" rel="stylesheet" />
+    </head>
+    <body class="site com_content view-featured no-layout no-task itemid-101">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8DRSMP" height="0" width="0" style="display: none; visibility: hidden;"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <!-- Body -->
+        <div class="body">
+            <div class="dk_trdm">
+                <a href="https://trdm.su/"> <img src="https://trdm.su/img/logo.png" style="display: block; width: 100%; /* min-width: 150px; */ margin-top: 20px;" /></a>
+
+                <a href="https://trdm.su/">
+                    <div style="color: white;">
+                        АО "Завод "Тюменьремдормаш"<br />
+                        Официальный партнер<br />
+                        Производство металлопродукции для строительства, обустройства дорог
+                    </div>
+                </a>
+            </div>
+            <div class="modal fade" id="callbackDialog" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="phoneInput">Номер телефона</label>
+                                    <input type="text" name="phone" class="form-control" id="phoneInput" data-mask="+7 (000) 000 00 00" placeholder="+7 (___) ___ __ __" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="nameInput">Как к Вам обращаться</label>
+                                    <input type="text" name="name" class="form-control" id="nameInput" placeholder="Иван" />
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary">Перезвоните мне</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="priceDialog" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="priceNameInput">Как к Вам обращаться</label>
+                                    <input type="text" name="name" class="form-control" id="priceNameInput" placeholder="Иван" />
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="pricePhoneInput">Номер телефона</label>
+                                            <input type="text" name="phone" class="form-control" id="pricePhoneInput" data-mask="+7 (000) 000 00 00" placeholder="+7 (___) ___ __ __" />
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="priceMailInput">или E-mail</label>
+                                            <input type="email" name="email" class="form-control" id="priceMailInput" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="priceCableInput">Наименование кабеля</label>
+                                            <input type="text" name="cable" class="form-control" id="priceCableInput" />
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="priceLengthInput">Метраж кабеля</label>
+                                            <input type="text" name="length" class="form-control" id="priceLengthInput" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" name="delivery" id="priceDeliveryInput1" value="самовывоз" checked /><label class="form-check-label" for="priceDeliveryInput1">Самовывоз</label>
+                                    </div>
+                                    <div class="form-check form-check-inline"><input type="radio" name="delivery" id="priceDeliveryInput2" value="доставка" /><label class="form-check-label" for="priceDeliveryInput2">Доставка</label></div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary">Получить прайс</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>
+                .header-firstLine {
+                    height: 60px;
+                    background: #263a4b;
+                    border-bottom: 1px solid #2d2d2da0;
+                }
+                .header-firstLine__text {
+                    color: white;
+                }
+                .header-firstLine__link {
+                    color: white;
+                    margin-right: 20px;
+                    font-size: 18px;
+                }
+                .header-firstLine__linkLast {
+                    margin-right: 0;
+                }
+                .header-firstLine__link:hover {
+                    color: white;
+                }
+                .header-firstLine__spacer {
+                    width: 147px;
+                }
+                .callbackButton {
+                    color: white;
+                    font-size: 18px;
+                    border: 2px solid white;
+                    padding: 5px 15px;
+                }
+                .callbackButton:hover {
+                    background: white;
+                    text-decoration: none;
+                    color: #263a4b;
+                }
+                .dk_trdm {
+                    width: 414px;
+                    position: absolute;
+                    display: grid;
+                    grid-template-columns: 130px 1fr;
+                    grid-gap: 10px;
+                    right: 10px;
+                    top: 10px; /* background-color: #b3160f; */
+                    padding: 11px;
+                    font-size: 14px;
+                    border: 2px solid white;
+                }
+                .dk_trdm_2 {
+                    width: 414px;
+                    display: grid;
+                    grid-template-columns: 130px 1fr;
+                    grid-gap: 10px;
+                    right: 10px;
+                    top: 10px;
+                    padding: 11px;
+                    font-size: 14px;
+                }
+                @media (max-width: 1830px) {
+                    .dk_trdm {
+                        grid-template-columns: 100px 1fr;
+                        width: 350px;
+                        font-size: 12px;
+                    }
+                }
+                @media (max-width: 1700px) {
+                    .dk_trdm {
+                        grid-template-columns: 80px 1fr;
+                        width: 300px;
+                        font-size: 12px;
+                    }
+                }
+                @media (max-width: 1600px) {
+                    .dk_trdm {
+                        grid-template-columns: 55px 1fr;
+                        width: 250px;
+                        font-size: 11px;
+                    }
+                }
+                @media (max-width: 1500px) {
+                    .dk_trdm {
+                        display: none;
+                    }
+                }
+
+                @media (max-width: 992px) {
+                    .header-firstLine {
+                        height: 40px;
+                        position: fixed;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        z-index: 50;
+                    }
+                    .header-firstLine__link {
+                        margin-right: 0;
+                        display: block;
+                        font-size: 12px;
+                    }
+                    .callbackButton {
+                        color: white;
+                        font-size: 15px;
+                        border: 2px solid white;
+                        padding: 4px 10px;
+                    }
+                }
+                @media (max-width: 768px) {
+                    .dk_trdm_2 {
+                        width: 100%;
+                    }
+                }
+            </style>
+            <div class="header-firstLine">
+                <div class="h-100 wrap-1000">
+                    <div class="h-100 container-fluid">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-auto d-none d-lg-block"><div class="header-firstLine__spacer"></div></div>
+                            <div class="col">
+                                <!--<span class="header-firstLine__text d-none d-lg-block">приём заказов, доставка с 30.03-30.04.2020</span>-->
+                                <div><a href="mailto:kabel-tyumen@mail.ru" class="header-firstLine__link">kabel-tyumen@mail.ru</a></div>
+                                <a href="tel:+73452411890" class="header-firstLine__link">+7 (3452) 41-18-90</a>
+                                <a href="tel:+73452411071" class="header-firstLine__link header-firstLine__linkLast d-none d-lg-inline">+7 (3452) 41-10-71</a>
+                                <!--<a href="tel:+79222680961" class="header-firstLine__link header-firstLine__linkLast">+7 (922) 268-09-61</a>-->
+                            </div>
+                            <div class="col-auto d-none d-lg-block">
+                                <a href="#" class="callbackButton" data-toggle="modal" data-target="#priceDialog">Заказать прайс</a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="#" class="callbackButton" data-toggle="modal" data-target="#callbackDialog">Перезвоните мне</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <header class="header">
+                <div class="h-100 wrap-1000">
+                    <div class="container-fluid h-100">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-auto d-lg-none">
+                                <div id="toggleMobile"><i class="fa fa-bars"></i></div>
+                            </div>
+                            <div class="col col-lg-auto logo text-center">
+                                <a href="#"><img src="assets/img/logo.png" alt="Союз-Энерго" /></a>
+                            </div>
+                            <div class="col d-none search_top">
+                                <form id="mod-finder-searchform111" action="/search" method="get" class="form-search">
+                                    <div class="finder">
+                                        <div class="search_str">
+                                            <input type="text" name="q" id="mod-finder-searchword111" class="search-query input-medium" value="" placeholder="Начать поиск" />
+                                            <button class="search_ok" type="submit"><i class="fa fa-search"></i></button>
+                                            <button class="search_cancel" type="reset"><i class="fa fa-times"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col main_menu">
+                                <ul class="nav menu" id="main_menu">
+                                    <li class="item-114 deeper parent">
+                                        <a href="/o-kompanii">О компании</a>
+                                        <ul class="nav-child unstyled small">
+                                            <li class="item-147"><a href="/o-kompanii/sotrudnichestvo">Сотрудничество</a></li>
+                                            <li class="item-120"><a href="/o-kompanii/sertifikaty">Сертификаты</a></li>
+                                            <li class="item-119"><a href="/o-kompanii/galereya">Галерея</a></li>
+                                            <li class="item-160"><a href="http://soyuz-energo.ru/images/Soyuz_energo.pdf" target="_blank" rel="noopener noreferrer">Презентация</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="item-115 deeper parent">
+                                        <a href="/produktsiya">Продукция</a>
+                                        <ul class="nav-child unstyled small">
+                                            <li class="item-146"><a href="/produktsiya/marki-po-alfavitu">Марки по алфавиту</a></li>
+                                            <li class="item-123 deeper parent">
+                                                <a href="/produktsiya/silovye">Силовые</a>
+                                                <ul class="nav-child unstyled small">
+                                                    <li class="item-129"><a href="/produktsiya/silovye/silovye-v-pvkh">Силовые в ПВХ</a></li>
+                                                    <li class="item-130"><a href="/produktsiya/silovye/silovye-v-rezine">Силовые в резине</a></li>
+                                                    <li class="item-131"><a href="/produktsiya/silovye/silovye-v-spe">Силовые в СПЭ</a></li>
+                                                    <li class="item-132"><a href="/produktsiya/silovye/silovye-v-epr">Силовые в ЭПР</a></li>
+                                                    <li class="item-133"><a href="/produktsiya/silovye/silovye-v-bpi">Силовые в БПИ</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="item-124"><a href="/produktsiya/samonesushchie">Самонесущие</a></li>
+                                            <li class="item-125"><a href="/produktsiya/kontrolnye">Контрольные</a></li>
+                                            <li class="item-126"><a href="/produktsiya/montazhnye">Монтажные</a></li>
+                                            <li class="item-127"><a href="/produktsiya/neizolirovannye">Неизолированные</a></li>
+                                            <li class="item-128 deeper parent">
+                                                <a href="/produktsiya/prochie">Прочие</a>
+                                                <ul class="nav-child unstyled small">
+                                                    <li class="item-153"><a href="/produktsiya/prochie/aviakosmicheskie">Авиакосмические</a></li>
+                                                    <li class="item-134"><a href="/produktsiya/prochie/aerodromnye">Аэродромные</a></li>
+                                                    <li class="item-135"><a href="/produktsiya/prochie/dlya-neftenasosov">Для нефтенасосов</a></li>
+                                                    <li class="item-136"><a href="/produktsiya/prochie/dlya-elektrotransporta">Для электротранспорта</a></li>
+                                                    <li class="item-137"><a href="/produktsiya/prochie/obmotochnye">Обмоточные</a></li>
+                                                    <li class="item-138"><a href="/produktsiya/prochie/pozharobezopasnye">Пожаробезопасные</a></li>
+                                                    <li class="item-139"><a href="/produktsiya/prochie/radiochastotnye">Радиочастотные</a></li>
+                                                    <li class="item-140"><a href="/produktsiya/prochie/sudovye">Судовые</a></li>
+                                                    <li class="item-141"><a href="/produktsiya/prochie/termostojkie">Термостойкие</a></li>
+                                                    <li class="item-142"><a href="/produktsiya/prochie/termoelektrodnye">Термоэлектродные</a></li>
+                                                    <li class="item-143"><a href="/produktsiya/prochie/shakhtnye-i-ekskavatornye">Шахтные и экскаваторные</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="item-158"><a href="/skladskaya-spravka-tyumen">Складская справка</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="item-116 deeper parent">
+                                        <a href="/informatsiya">Информация</a>
+                                        <ul class="nav-child unstyled small">
+                                            <li class="item-121"><a href="/informatsiya/spravochniki">Справочники</a></li>
+                                            <li class="item-122"><a href="/informatsiya/novosti-i-stati">Новости и статьи</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="item-117"><a href="/kontakty">Контакты</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-auto search">
+                                <div class="d-none d-lg-block"><i id="searchToggle" class="fa fa-search"></i></div>
+                                <a class="d-lg-none" href="/search"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div id="slider" class="carousel slide" data-ride="carousel">
+                <div class="h-100 carousel-inner">
+                    <div class="h-100 carousel-item active" style="background-image: url(assets/img/slide_1.jpg);">
+                        <div class="h-100 wrap-1000">
+                            <div class="h-100 container">
+                                <div class="h-100 row align-items-center justify-content-center">
+                                    <div class="col-8 col-lg-12">
+                                        <h2>
+                                            Ведущий поставщик<br />
+                                            кабельно-проводниковой продукции<br />
+                                            в Тюменской области
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-100 carousel-item" style="background-image: url(assets/img/слайдер.jpg);">
+                        <div class="h-100 wrap-1000">
+                            <div class="h-100 container">
+                                <div class="h-100 row align-items-center justify-content-center">
+                                    <div class="col-8 col-lg-12"><h2></h2></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-100 carousel-item" style="background-image: url(assets/img/слайдер_3333.jpg);">
+                        <div class="h-100 wrap-1000">
+                            <div class="h-100 container">
+                                <div class="h-100 row align-items-center justify-content-center">
+                                    <div class="col-8 col-lg-12">
+                                        <h2></h2>
+                                        <aside>
+                                            <h1>
+                                                <span style="color: #ffffff;"><strong>Распродажа</strong></span>
+                                            </h1>
+                                            <p>
+                                                <span style="color: #ffffff; font-size: 12pt;">
+                                                    <strong>
+                                                        <span
+                                                            style="
+                                                                font-family: Roboto, sans-serif;
+                                                                font-style: normal;
+                                                                letter-spacing: normal;
+                                                                orphans: 2;
+                                                                text-align: left;
+                                                                text-indent: 0px;
+                                                                text-transform: none;
+                                                                white-space: normal;
+                                                                widows: 2;
+                                                                word-spacing: 0px;
+                                                                float: none;
+                                                            "
+                                                        >
+                                                            Кабельно-проводниковой продукции
+                                                        </span>
+                                                    </strong>
+                                                </span>
+                                            </p>
+                                        </aside>
+                                        <p>
+                                            <span style="color: #ffffff;">
+                                                <a
+                                                    href="/images/warehouse/%D0%A1%D0%9E%D0%AE%D0%97-%D0%AD%D0%9D%D0%95%D0%A0%D0%93%D0%9E_%D0%A1%D0%BA%D0%BB%D0%B0%D0%B4%D1%81%D0%BA%D0%B8%D0%B5_%D0%BE%D1%81%D1%82%D0%B0%D1%82%D0%BA%D0%B8.xls"
+                                                    style="color: #ffffff;"
+                                                >
+                                                    ОТКРЫТЬ
+                                                </a>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-100 carousel-item" style="background-image: url(assets/img/image_manager__viva_slider_fotolia_109846215_m.jpg);">
+                        <div class="h-100 wrap-1000">
+                            <div class="h-100 container">
+                                <div class="h-100 row align-items-center justify-content-center">
+                                    <div class="col-8 col-lg-12">
+                                        <h2>
+                                            <span style="color: #000000;">
+                                                <strong>
+                                                    <span style="font-size: 24pt;">
+                                                        <span
+                                                            style="
+                                                                font-family: Roboto, sans-serif;
+                                                                font-style: normal;
+                                                                letter-spacing: normal;
+                                                                orphans: 2;
+                                                                text-align: left;
+                                                                text-indent: 0px;
+                                                                text-transform: none;
+                                                                white-space: normal;
+                                                                widows: 2;
+                                                                word-spacing: 0px;
+                                                                float: none;
+                                                            "
+                                                        >
+                                                            Более 35 000 маркоразмеров кабеля
+                                                        </span>
+                                                    </span>
+                                                </strong>
+                                            </span>
+                                        </h2>
+                                        <h1 style="text-align: left;">
+                                            <span style="font-size: 24pt;">
+                                                <strong><span style="color: #000000;">В наличии на складе Тюмени</span></strong>
+                                            </span>
+                                        </h1>
+                                        <p><a href="/produktsiya/marki-po-alfavitu">Открыть каталог</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-100 carousel-item" style="background-image: url(assets/img/waste-management-construction.jpg);">
+                        <div class="h-100 wrap-1000">
+                            <div class="h-100 container">
+                                <div class="h-100 row align-items-center justify-content-center">
+                                    <div class="col-8 col-lg-12">
+                                        <h2>
+                                            Наша продукция<br />
+                                            На ведущих стройках<br />
+                                            Тюменской области
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev"><img src="assets/img/arrow_l.png" /></a>
+                    <a class="carousel-control-next" href="#slider" role="button" data-slide="next"><img src="assets/img/arrow_r.png" /></a>
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#slider" data-slide-to="1"></li>
+                    <li data-target="#slider" data-slide-to="2"></li>
+                    <li data-target="#slider" data-slide-to="3"></li>
+                    <li data-target="#slider" data-slide-to="4"></li>
+                </ol>
+            </div>
+
+            <div class="moduletable">
+                <div class="newsflash">
+                    <h2 class="text-center">Свежие новости</h2>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 text-right"><a class="showall" href="/informatsiya/novosti-i-stati">Смотреть все</a></div>
+                        </div>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide item">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="float-left mr-3 newsflash__item">
+                                                <img class="img-fluid" src="assets/img/200041500851_13358_1.jpg" />
+                                            </div>
+
+                                            <h4 class="newsflash-title">
+                                                <a href="/informatsiya/novosti-i-stati/rasshirenie-assortimenta-kompanii-2"> Расширение ассортимента компании </a>
+                                            </h4>
+
+                                            <div></div>
+                                            <div>6 ноября наша компания отмечает своё 11-летие.</div>
+                                            <div></div>
+                                            <div>
+                                                И к этой дате мы подошли расширив наш ассортимент электротехнической продукцией. Теперь ООО «СОЮЗ – ЭНЕРГО» - комплексный поставщик кабельно-проводниковой продукции, светотехники,
+                                                электроустановочных изделий, кабеленесущих систем, низковольтного оборудования и структурированных кабельных систем с 11-летним стажем и опытом участия в конкурсных процедурах. Ассортимент
+                                                поставляемой нами продукции может удовлетворить потребности промышленных предприятий, производителей электрощитового оборудования, предприятий инфраструктуры, электромонтажных и строительных
+                                                компаний, частных монтажников, розничных магазинов и проектировщиков.
+                                            </div>
+                                            <div></div>
+                                            <div></div>
+                                            <div>
+                                                Нас связывают партнерские отношения с ведущими российскими и европейскими производителями кабельно-проводниковой и электротехнической продукции, но мы всегда готовы к новому сотрудничеству с
+                                                производителями и поставщиками. Мы рассматриваем все предложения и нацелены на долгосрочное сотрудничество.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide item">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="float-left mr-3 newsflash__item">
+                                                <img class="img-fluid" src="assets/img/200041500851_13358_1.jpg" />
+                                            </div>
+
+                                            <h4 class="newsflash-title">
+                                                <a href="/informatsiya/novosti-i-stati/rasshirenie-assortimenta-kompanii"> Расширение ассортимента компании </a>
+                                            </h4>
+
+                                            <div>
+                                                6 ноября наша компания отмечает своё 11-летие. И к этой дате мы подошли расширив наш ассортимент электротехнической продукцией. Теперь ООО «СОЮЗ – ЭНЕРГО» - комплексный поставщик
+                                                кабельно-проводниковой продукции, светотехники, электроустановочных изделий, кабеленесущих систем, низковольтного оборудования и структурированных кабельных систем с 11-летним стажем и опытом
+                                                участия в конкурсных процедурах. Ассортимент поставляемой нами продукции может удовлетворить потребности промышленных предприятий, производителей электрощитового оборудования, предприятий
+                                                инфраструктуры, электромонтажных и строительных компаний, частных монтажников, розничных магазинов и проектировщиков.
+                                            </div>
+                                            <div>
+                                                Нас связывают партнерские отношения с ведущими российскими и европейскими производителями кабельно-проводниковой и электротехнической продукции, но мы всегда готовы к новому сотрудничеству с
+                                                производителями и поставщиками. Мы рассматриваем все предложения и нацелены на долгосрочное сотрудничество.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide item">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="float-left mr-3 newsflash__item">
+                                                <img class="img-fluid" src="/" />
+                                            </div>
+
+                                            <h4 class="newsflash-title">
+                                                <a href="/informatsiya/novosti-i-stati/s-dnem-rabotnikov-neftyanoj-gazovoj-i-toplivnoj-produktsii"> С Днем работников нефтяной, газовой и топливной продукции! </a>
+                                            </h4>
+
+                                            <p></p>
+                                            <p style="margin: 0px 0px 10px; text-align: justify; color: #595959; font-family: 'Trebuchet MS', sans-serif; font-size: 14px;">
+                                                <span style="font-size: 14pt;">6 сентября, наша страна отмечает профессиональный праздник работников нефтяной, газовой и топливной промышленности!</span>
+                                            </p>
+                                            <p style="margin: 0px 0px 10px; text-align: justify; color: #595959; font-family: 'Trebuchet MS', sans-serif; font-size: 14px;">
+                                                <span style="font-size: 14pt;">
+                                                    ООО "Союз-Энерго" – давний и надежный партнер нефтяных и газовых предприятий, много и плодотворно работающий в интересах современной нефтегазовой отрасли. И в этот прекрасный воскресный
+                                                    день мы от всей души желаем отрасли динамичного развития, компаниям – стабильности, благополучия и процветания, новых интересных заказов, новых свершений, всем специалистам – крепкого
+                                                    здоровья, профессиональных и личных успехов, удачи в делах и достатка. Пусть ваш созидательный труд всегда оценивается по достоинству, пусть воплощаются мечты и случаются чудеса, пусть
+                                                    поддержка близких, друзей, коллег, единомышленников будет прочным фундаментом для самых смелых проектов!
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide item">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="float-left mr-3 newsflash__item">
+                                                <img class="img-fluid" src="assets/img/%D1%88%D0%BB%D0%B5%D0%BC.jpg" />
+                                            </div>
+
+                                            <h4 class="newsflash-title">
+                                                <a href="/informatsiya/novosti-i-stati/s-dnjom-stroitelya"> С Днём строителя! </a>
+                                            </h4>
+
+                                            <p>Компания ООО «СОЮЗ-ЭНЕРГО», поздравляет всех работников строительной отрасли с профессиональным праздником, С днем строителя!</p>
+                                            <p>Благодаря Вашему профессиональному труду возводятся новые города, строятся высокотехнологичные промышленные объекты, сооружаются здания.</p>
+                                            <p>Желаем Вам плодотворной деятельности, успешной реализации новых проектов, неиссякаемой энергии и оптимизма!</p>
+                                            <p></p>
+                                            <p><img src="assets/img/R203318.jpg" alt="R203318" /></p>
+                                            <p></p>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="moduletable industry-line d-none d-lg-block">
+                <div class="wrap-1000">
+                    <div class="container-fluid">
+                        <div class="row no-gutters align-items-end justify-content-center">
+                            <div class="col-12 col-md-3 text-center"><a href="/produktsiya" class="industry industry-1" data-industry="1">Энергетика</a></div>
+                            <div class="col-12 col-md-3 text-center"><a href="/produktsiya" class="industry industry-6" data-industry="6">Машиностроение</a></div>
+                            <div class="col-12 col-md-3 text-center"><a href="/produktsiya" class="industry industry-3" data-industry="3">Строительство</a></div>
+                            <div class="col-12 col-md-3 text-center"><a href="/produktsiya" class="industry industry-4" data-industry="4">Металлургия</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="industry-categories d-none industry-1">
+                <div class="wrap-1000">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Энергетика</h3>
+                                <ul>
+                                    <li><a href="/produktsiya/silovye">Силовые</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-pvkh">Силовые в ПВХ</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-bpi">Силовые в БПИ</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-rezine">Силовые в резине</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-spe">Силовые в СПЭ</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-epr">Силовые в ЭПР</a></li>
+                                    <li><a href="/produktsiya/kontrolnye">Контрольные</a></li>
+                                    <li><a href="/produktsiya/neizolirovannye">Неизолированные</a></li>
+                                    <li><a href="/produktsiya/prochie/pozharobezopasnye">Пожаробезопасные</a></li>
+                                    <li><a href="/produktsiya/samonesushchie">Самонесущие</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="industry-categories d-none industry-2">
+                <div class="wrap-1000">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Нефтегазовая промышленность</h3>
+                                <ul>
+                                    <li><a href="/produktsiya/silovye">Силовые</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-pvkh">Силовые в ПВХ</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-rezine">Силовые в резине</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-spe">Силовые в СПЭ</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-epr">Силовые в ЭПР</a></li>
+                                    <li><a href="/produktsiya/prochie/dlya-neftenasosov">Для нефтенасосов</a></li>
+                                    <li><a href="/produktsiya/kontrolnye">Контрольные</a></li>
+                                    <li><a href="/produktsiya/neizolirovannye">Неизолированные</a></li>
+                                    <li><a href="/produktsiya/prochie/pozharobezopasnye">Пожаробезопасные</a></li>
+                                    <li><a href="/produktsiya/samonesushchie">Самонесущие</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="industry-categories d-none industry-3">
+                <div class="wrap-1000">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Строительство</h3>
+                                <ul>
+                                    <li><a href="/produktsiya/silovye">Силовые</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-pvkh">Силовые в ПВХ</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-rezine">Силовые в резине</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-spe">Силовые в СПЭ</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-epr">Силовые в ЭПР</a></li>
+                                    <li><a href="/produktsiya/kontrolnye">Контрольные</a></li>
+                                    <li><a href="/produktsiya/montazhnye">Монтажные</a></li>
+                                    <li><a href="/produktsiya/neizolirovannye">Неизолированные</a></li>
+                                    <li><a href="/produktsiya/prochie/pozharobezopasnye">Пожаробезопасные</a></li>
+                                    <li><a href="/produktsiya/samonesushchie">Самонесущие</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="industry-categories d-none industry-4">
+                <div class="wrap-1000">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Металлургия</h3>
+                                <ul>
+                                    <li><a href="/produktsiya/silovye">Силовые</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-pvkh">Силовые в ПВХ</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-rezine">Силовые в резине</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-spe">Силовые в СПЭ</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-epr">Силовые в ЭПР</a></li>
+                                    <li><a href="/produktsiya/kontrolnye">Контрольные</a></li>
+                                    <li><a href="/produktsiya/montazhnye">Монтажные</a></li>
+                                    <li><a href="/produktsiya/prochie/pozharobezopasnye">Пожаробезопасные</a></li>
+                                    <li><a href="/produktsiya/prochie/termostojkie">Термостойкие</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="industry-categories d-none industry-6">
+                <div class="wrap-1000">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Машиностроение</h3>
+                                <ul>
+                                    <li><a href="/produktsiya/silovye">Силовые</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-pvkh">Силовые в ПВХ</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-rezine">Силовые в резине</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-spe">Силовые в СПЭ</a></li>
+                                    <li><a href="/produktsiya/prochie/aviakosmicheskie">Авиакосмические</a></li>
+                                    <li><a href="/produktsiya/kontrolnye">Контрольные</a></li>
+                                    <li><a href="/produktsiya/montazhnye">Монтажные</a></li>
+                                    <li><a href="/produktsiya/prochie/obmotochnye">Обмоточные</a></li>
+                                    <li><a href="/produktsiya/prochie/pozharobezopasnye">Пожаробезопасные</a></li>
+                                    <li><a href="/produktsiya/prochie/sudovye">Судовые</a></li>
+                                    <li><a href="/produktsiya/prochie/termostojkie">Термостойкие</a></li>
+                                    <li><a href="/produktsiya/prochie/termoelektrodnye">Термоэлектродные</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="industry-categories d-none industry-5">
+                <div class="wrap-1000">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Транспортная инфраструктура</h3>
+                                <ul>
+                                    <li><a href="/produktsiya/silovye">Силовые</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-pvkh">Силовые в ПВХ</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-rezine">Силовые в резине</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-spe">Силовые в СПЭ</a></li>
+                                    <li><a href="/produktsiya/prochie/dlya-elektrotransporta">Для электротранспорта</a></li>
+                                    <li><a href="/produktsiya/prochie/aerodromnye">Аэродромные</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="industry-categories d-none industry-7">
+                <div class="wrap-1000">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Горнорудная промышленность</h3>
+                                <ul>
+                                    <li><a href="/produktsiya/silovye">Силовые</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-pvkh">Силовые в ПВХ</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-rezine">Силовые в резине</a></li>
+                                    <li><a href="/produktsiya/silovye/silovye-v-epr">Силовые в ЭПР</a></li>
+                                    <li><a href="/produktsiya/prochie/shakhtnye-i-ekskavatornye">Шахтные и экскаваторные</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="moduletable industry-line d-none d-lg-block">
+                <div class="wrap-1000">
+                    <div class="container">
+                        <div class="row no-gutters align-items-start justify-content-center">
+                            <div class="col-12 col-lg-4 text-center"><a href="/produktsiya" class="industry industry-5" data-industry="5">Транспортная инфраструктура</a></div>
+                            <div class="col-12 col-lg-4 text-center"><a href="/produktsiya" class="industry industry-2" data-industry="2">Нефтегазовая промышленность</a></div>
+                            <div class="col-12 col-lg-4 text-center"><a href="/produktsiya" class="industry industry-7" data-industry="7">Горнорудная промышленность</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="partners">
+                <div class="wrap-1000">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <h3>Партнёры</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div id="partners" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <p><img src="assets/img/partners1.jpg" alt="partners1.jpg" /></p>
+                                    </div>
+                                    <div class="carousel-controls">
+                                        <a class="carousel-control-prev" href="#partners" role="button" data-slide="prev"><img src="assets/img/arrow_l_dark.png" /></a>
+                                        <a class="carousel-control-next" href="#partners" role="button" data-slide="next"><img src="assets/img/arrow_r_dark.png" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap-1000">
+            <div class="container-fluid main-content">
+                <div class="row">
+                    <div class="col">
+                        <main id="content" role="main">
+                            <!-- Begin Content -->
+                            <div id="system-message-container"></div>
+
+                            <div class="blog-featured" itemscope itemtype="https://schema.org/Blog"></div>
+
+                            <div class="clearfix"></div>
+                            <!-- End Content -->
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="wrap-1000">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-auto footer_menu">
+                            <ul class="nav menu">
+                                <li class="item-144"><a href="/skladskaya-spravka-tyumen">Складская справка Тюмень</a></li>
+                                <li class="item-145"><a href="/informatsiya-dlya-postavshchikov">Информация для поставщиков</a></li>
+                            </ul>
+                            <!--This code is installed via module -->
+                            <script type="text/javascript">
+                                (function () {
+                                    var widget_id = "DClJbmeVd8";
+                                    var d = document;
+                                    var w = window;
+                                    function l() {
+                                        var s = document.createElement("script");
+                                        s.type = "text/javascript";
+                                        s.async = true;
+                                        s.src = "//code.jivosite.com/script/widget/" + widget_id;
+                                        var ss = document.getElementsByTagName("script")[0];
+                                        ss.parentNode.insertBefore(s, ss);
+                                    }
+                                    if (d.readyState == "complete") {
+                                        l();
+                                    } else {
+                                        if (w.attachEvent) {
+                                            w.attachEvent("onload", l);
+                                        } else {
+                                            w.addEventListener("load", l, false);
+                                        }
+                                    }
+                                })();
+                            </script>
+                        </div>
+                        <div class="col footer_courses d-none d-lg-block">
+                            <div class="container-fluid">
+                                <div class="row justify-content-center">
+                                    <div class="col-6 col-lg-5">
+                                        <!--  FOREXPF.RU - Forex start -->
+                                        <div class="title">Курс цветных металлов</div>
+                                        <div class="date">30.03.2021</div>
+                                        <div class="price">
+                                            <div>Алюминий $<span id="calumb">0.00</span>/тонна</div>
+                                            <div>Медь $<span id="ccopperb">0.00</span>/тонна</div>
+                                            <div style="display: none;">
+                                                <a href="http://www.forexpf.ru/"></a>
+                                                <span id="caluma"></span>
+                                                <span id="ccoppera"></span>
+                                                <span id="ccomtm"></span>
+                                            </div>
+                                        </div>
+                                        <script src="https://informers.forexpf.ru/js/legacy/commod/65.js"></script>
+                                        <!--  FOREXPF.RU - Forex end -->
+                                    </div>
+                                    <div class="col-6 col-lg-3">
+                                        <!--  FOREXPF.RU - Forex start -->
+                                        <div class="title">Курс валют</div>
+                                        <div class="date">30.03.2021</div>
+                                        <div class="price">
+                                            <div>$ <span id="usdrubbid">0.00</span></div>
+                                            <div>€ <span id="eurrubbid">0.00</span></div>
+                                            <div style="display: none;">
+                                                <a href="http://www.profinance.ru/"></a>
+                                                <span id="usdrubask"></span>
+                                                <span id="eurrubask"></span>
+                                                <span id="euusrutm"></span>
+                                            </div>
+                                        </div>
+                                        <script charset="utf-8" src="https://informers.forexpf.ru/export/euusrub.js"></script>
+                                        <!--  FOREXPF.RU - Forex end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 d-sm-none"></div>
+                        <div class="col-12 col-lg-auto footer_copyright">
+                            <p>
+                                ул. Харьковская, 59, 3 этаж<br />
+                                <a href="tel:+73452411890">+7 (3452) 41-18-90</a><br />
+                                <a href="tel:+73452411071">+7 (3452) 41-10-71</a>
+                                <!--<a href="tel:+79222680961">+7 (922) 268-09-61</a><br /><span>Приём заказов, доставка<br />с 30.03-30.04.2020</span>-->
+                            </p>
+                            © 2021 Союз-Энерго
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function (d, w, c) {
+                (w[c] = w[c] || []).push(function () {
+                    try {
+                        w.yaCounter45474036 = new Ya.Metrika({ id: 45474036, clickmap: true, trackLinks: true, accurateTrackBounce: true });
+                    } catch (e) {}
+                });
+                var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () {
+                        n.parentNode.insertBefore(s, n);
+                    };
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = "https://mc.yandex.ru/metrika/watch.js";
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else {
+                    f();
+                }
+            })(document, window, "yandex_metrika_callbacks");
+        </script>
+        <noscript>
+            <div><img src="https://mc.yandex.ru/watch/45474036" style="position: absolute; left: -9999px;" alt="" /></div>
+        </noscript>
+        <!-- /Yandex.Metrika counter -->
+        <!-- Yandex.Metrika counter -->
+      <!-- Временно отключено  <script type="text/javascript">
+            (function (m, e, t, r, i, k, a) {
+                m[i] =
+                    m[i] ||
+                    function () {
+                        (m[i].a = m[i].a || []).push(arguments);
+                    };
+                m[i].l = 1 * new Date();
+                (k = e.createElement(t)), (a = e.getElementsByTagName(t)[0]), (k.async = 1), (k.src = r), a.parentNode.insertBefore(k, a);
+            })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+            ym(58297432, "init", {
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                webvisor: true,
+            });
+        </script>-->
+        <noscript>
+            <div><img src="https://mc.yandex.ru/watch/58297432" style="position: absolute; left: -9999px;" alt="" /></div>
+        </noscript>
+        <!-- /Yandex.Metrika counter -->
+
+        <!--Временно отключено <script src="https://cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8"></script>-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                var swiper = new Swiper(".swiper-container", {
+                    slidesPerView: 1,
+                    //loop: true,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            });
+        </script>
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-N8DRSMP");
+        </script>
+        <script src="assets/js/bootstrap.min.js?eae6acb9a784cac9e14c97cc0bb79ccd"></script>
+        <script src="assets/js/template.js"></script>
+        <!--[if lt IE 9]><script src="/media/jui/js/html5.js?eae6acb9a784cac9e14c97cc0bb79ccd"></script><![endif]-->
+    </body>
+</html>
